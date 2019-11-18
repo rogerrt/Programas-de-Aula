@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int n;
+    int bin[8];
+    int res;
+
+    printf("\tDigite o numero a ser convertido\n");
+    scanf("%d", &n);
+
+    for (res = 7; res >= 0; res--)
+    {
+        if (n % 2 == 0)
+        {
+            bin[res] = 0;
+            n = n / 2;
+        }
+        else
+        {
+            bin[res] = 1;
+            n = n / 2;
+        }
+    }
+    
+    for (res = 0; res <= 7; res++)
+    {
+        printf("%d", bin[res]);
+    }
+    printf("\n\n");
+    system("pause");
+}
