@@ -1,0 +1,21 @@
+#include<stdio.h>
+#define tam 10
+
+int main()
+{
+    int vet1[tam], vet2[tam], i;
+
+    for ( i = 0; i < tam; i++)
+    {
+        printf("\nEscreva o elemento %d do vetor 1\n", vet1[tam]);
+        scanf("%d", &vet1[i]);
+    }
+
+    for ( i = 0; i < tam; i++)
+    {
+        printf("\nEscreva o elemento %d do vetor 2\n", vet2[tam]);
+        scanf("%d", &vet2[i]);
+    }
+    
+    
+}
